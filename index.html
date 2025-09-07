@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AnTo V1 — Announcement Tool</title>
+<meta name="description" content="AnTo V1 — A lightweight announcement tool for Roblox Studio developers. Send messages and manage access with ease."/>
+<style>
+  :root{
+    --bg:#0b0b0b;
+    --fg:#f5f5f5;
+    --muted:#bdbdbd;
+    --accent:#ffffff;
+    --glass:rgba(255,255,255,0.03);
+    --radius:14px;
+    --sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:var(--sans);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:32px;
+  }
+  .card{
+    width:min(600px,90%);
+    background:var(--glass);
+    border-radius:var(--radius);
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    box-shadow:0 6px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+    text-align:center;
+  }
+  h1{
+    margin:0;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+  }
+  p{
+    margin:0;
+    font-size:16px;
+    color:var(--muted);
+    max-width:60ch;
+    margin-inline:auto;
+  }
+  .get-btn{
+    text-decoration:none;
+    display:inline-flex;
+    gap:12px;
+    align-items:center;
+    justify-content:center;
+    padding:18px 36px;
+    border-radius:18px;
+    font-weight:700;
+    color:var(--bg);
+    background:var(--accent);
+    margin-top:16px;
+    font-size:18px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.5);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .get-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 40px rgba(0,0,0,0.6);
+  }
+  .get-btn svg{
+    width:28px;
+    height:28px;
+    stroke:black;
+    stroke-width:2.5;
+    fill:none;
+    transition:transform .25s ease;
+  }
+  .get-btn:hover svg{
+    transform:translateY(2px);
+  }
+  footer{
+    margin-top:20px;
+    font-size:12px;
+    color:rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>AnTo V1</h1>
+  <p>The ultimate announcement tool for Roblox Studio developers. Send messages and control access easily with AnTo V1.</p>
+
+  <a class="get-btn" href="https://create.roblox.com/store/asset/116936094221833/AnTo-V1-Announcement-Tool" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 64 64">
+      <path d="M32 6v38"/>
+      <path d="M20 32l12 12 12-12"/>
+      <path d="M12 54h40"/>
+    </svg>
+    Get AnTo V1
+  </a>
+
+  <footer>© 2025 AnTo V1 — Roblox Asset ID: 116936094221833</footer>
+</main>
+</body>
+</html>
